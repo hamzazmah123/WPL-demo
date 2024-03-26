@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sajawal page</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 7px;
+            padding: 3px;
+            overflow: hidden;
+            background-color: #33333367;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #bd1c1c;
+        }
+
+        body {
+            /* font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            margin-left: 50px;
+            line-height: 1.8;
+            min-height: 100vh; */
+            /* background: #e49e1cd8; */
+            flex-direction: column;
+            background-size: 98%;
+            background-image: url('home1.jpg');
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a class="active" href="#" id="page0">Home</a></li>
+        <li><a href="#" id="page1">Hamza</a></li>
+        <li><a href="#" id="page2">Fahad</a></li>
+        <li><a href="#" id="page3">Sajawal</a></li>
+    </ul>
+
+    <!-- <button onclick="nextPage('hamza.html')">Page 1</button>
+    <button onclick="nextPage('fahad.html')">Page 2</button> -->
+
+    <script>
+
+        const home = document.getElementById('page0');
+        const hamza1 = document.getElementById('page1');
+        const fahad = document.getElementById('page2');
+        //const sajawal = document.getElementById('page3');
+
+        page0.addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location.href = 'home.html';
+        })
+
+        page1.addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location.href = 'hamza.html';
+        })
+
+        page2.addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location.href = 'fahad.html';
+        })
+
+        // page3.addEventListener('click', function (event) {
+        //     event.preventDefault();
+        //     window.location.href = 'sajawal.html';
+        // })
+
+    </script>
+</body>
+
+</html>
